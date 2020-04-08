@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>WEB222 Store - Contact</title>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contactStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Kelly+Slab|Rubik+Mono+One&display=swap&effect=outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap&effect=outline" rel="stylesheet">
+  </head>
+  <body id="BODY">
+
+
+    <div class=header style="font-family: 'Kelly Slab', serif;">
+      <h1 class=font-effect-outline id=text>HACKME Int. Supply Co.<h1>
+        <img class='logo' src="images/HackmeLog.png"></img>
+        <p class=subheading>Specializing in anything one might need for any sort of venture.<br>
+          Take a gander at our wares, or use the button below to contact me: <br><span class=contact><a href="contact.html" title="Contact Me">Fawks E. Wulf - Cunning Entrepreneur</a></span></p>
+        </div>
+        <div class="FormContainer">
+          <form class="contactForm" action="https://httpbin.org/post"&&"https://formspree.io/xvobpblv" method="POST">
+            <label class=font-effect-outline>
+              First Name:
+              <br>
+              <input type="text" name="First Name" required>
+            </label>
+            <br>
+            <label class=font-effect-outline>
+              Last Name:
+              <br>
+              <input type="text" name="Last Name">
+            </label>
+            <br>
+            <label class=font-effect-outline>
+              Your email:<br>
+              <input type="text" name="_replyto">
+            </label>
+            <br>
+            <label class=font-effect-outline>
+              Address: <br>
+              <input type="text" name="Address">
+            </label>
+            <br>
+
+            <label class=font-effect-outline>
+              City:<br>
+              <input type="text" name="City">
+            </label>
+            <br>
+
+            <label class=font-effect-outline>
+              Phone<br>
+              <input type="tel" name="PhoneNum">
+            </label>
+            <br>
+
+            <label class=font-effect-outline>
+              Postal Code:<br>
+              <input type="text" name="Postal Code">
+            </label>
+            <br>
+
+            <label class=font-effect-outline>
+              Would you like to be Phoned?
+              <input type="checkbox" name="phoneYes" value="User would like to be phoned">
+            </label>
+            <br>
+
+            <label class=font-effect-outline>
+              Select reason for contacting: <br>
+              Question <input type="radio" name="radio" value="Question">
+              Comment <input type="radio" name="radio" value="Comment">
+              Order Issue <input type="radio" name="radio" value="OrderProb">
+            </label>
+            <br>
+            <label class=font-effect-outline>
+              Your message: <br>
+              <textarea name="message"></textarea>
+            </label>
+
+            <!--past this point things are added dynamically with js-->
+            <br>
+            <button type="submit">Submit form</button>
+          </form>
+        </div>
+
+        <div class="Foot" style="font-family: 'Kelly Slab', serif;">
+          <span class="Footertext"><h1 class="font-effect-outline">
+            Copyright details: "ACME" and its fictional items are owned by Warner Brothers<br>
+            The logo is owned by Monocle Hat Media (Me) <br>
+            <a href="https://insidetherockposterframe.blogspot.com/2013/05/the-acme-corporation-poster-by-rob-loukotka.html">the background image is designed by "Rob Loukotka"</a></span>
+            <script src="script.js"></script>
+            <div class="subscribe">Subscribe to our newsletter for daily updates on the latest schemes
+              <form action="https://formspree.io/xaydwdaw"method="POST">
+                <label>
+                  Your email:
+                  <input type="text" name="_replyto" required>
+                </label>
+
+                <!-- your other form fields go here -->
+
+                <button type="submit">Send</button>
+              </form></div>
+              <div>
+
+                <!--
+
+                Part 2: Contact Us Page
+
+                Requirements:
+
+                1. Use the same header/footer, colours, fonts, etc. as your index.html page.
+                It should be obvious to the user they they are still on the same site, and that
+                contact.html is part of your store.
+
+                2. Include an HTML Form for the user to fill out his or her information along
+                with their message to you. Your form should including the following, and all
+                fields should be mandatory unless otherwise noted, and use the most appropriate <input> type:
+
+                - First Name
+                - Last Name
+                - Email Address
+                - Address
+                - City (use a <datalist> for autocomplete of common Canadian cities)
+                - Phone Number (must be a valid Canadian Phone Number, use regex)
+                - Postal Code (must be a valid Canadian Postal Code, use regex)
+                - Checkbox Option to be phoned ("Would you like to be phoned?")
+                - Radio Options to specify what this is about: one of "Question",
+                "Comment", or "Order Problem". If the user selects "Order Problem",
+                dynamically reveal another input box to enter the order number. In the
+                case of "Comment" or "Question" hide this input box.
+                - A large area to enter the message that they want to send
+                - A hidden input field with your name
+
+                3. The form should submit to https://httpbin.org/post using the POST method,
+                and only allow the user to submit when all data has been entered and there
+                aren't any validation errors.  The data posted to httpbin.org should include
+                all data defined in the form above (e.g., visible and hidden fields).
+
+              --></body>
+              </html>
